@@ -1,0 +1,23 @@
+[package]
+name = "terminapp"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.96"
+description = "A keyboard-driven terminal RSS and Atom reader"
+repository = "https://github.com/alveflo/terminal-news"
+
+[dependencies]
+anyhow = "1"
+chrono = "0.4"
+clap = { version = "4", features = ["derive"] }
+crossterm = "0.29"
+feed-rs = "2"
+ratatui = { version = "0.30", features = ["unstable-rendered-line-info"] }
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls"] }
+scraper = "0.24"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+tempfile = "3"
+url = "2"
+webbrowser = "1"
